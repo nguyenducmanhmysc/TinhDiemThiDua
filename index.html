@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style/main.css">
+        <link rel="stylesheet" href="./assets/style/animation.css">
+        <link rel="stylesheet" href="./assets/style/app.css">
+        <link rel="stylesheet" href="./assets/style/app-content.css">
+        <script src="https://kit.fontawesome.com/a2d3361a92.js" crossorigin="anonymous"></script>
+        <title>Lesson 1</title>
+    </head>
+    <body>
+
+        <div class="MACOS">
+            <div class="taskbar">
+                <div class="select-table">
+                    <ul>
+                        <div class="icon-macos">
+                            <i class="icon-macos-icon fab fa-apple"></i>
+                        </div>
+                        <li>File</li>
+                        <li>Edit</li>
+                        <li>Selection</li>
+                        <li>View</li>
+                        <li>Window</li>
+                    </ul>
+                </div>
+                <div class="select-icon">
+                    <ul>
+                        <li class="taskbar-icon"><img src="./assets/img/MACOS/Icon/bluetooth.png" alt=""></li>
+                        <li class="taskbar-icon"><img src="./assets/img/MACOS/Icon/wi-fi.png" alt=""></li>
+                        <li class="taskbar-icon"><img class="desktop" src="./assets/img/MACOS/Icon/computer.png" alt=""></li>
+                        <li class="taskbar-icon"><img class="battery" src="./assets/img/MACOS/Icon/battery.png" alt=""></li>
+                        <li class="taskbar-icon"><img src="./assets/img/MACOS/Icon/volume.png" alt=""></li>
+                        <li class="taskbar-icon"><img src="./assets/img/MACOS/Icon/arrow.png" alt=""></li>
+                        <li class="taskbar-icon"><img src="./assets/img/MACOS/Icon/search.png" alt=""></li>
+                        <li class="taskbar-icon"><img src="./assets/img/MACOS/Icon/switch.png" alt=""></li>
+                        <li class="taskbar-clock"><span>10:25</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-app">
+                <div class="app" style="display: none;">
+                    <div class="app-header">
+                        <div class="app-header_navigation">
+                            <img onclick="closeApp();" class="app-header_nav-icon" src="./assets/img/NavigationApp/Close.png" alt="">
+                            <img onclick="minimizeApp()" class="app-header_nav-icon" src="./assets/img/NavigationApp/Minimize.png" alt="">
+                            <img onclick="fullScreenApp()" class="app-header_nav-icon" src="./assets/img/NavigationApp/FullScreen.png" alt="">
+                        </div>
+                        <div class="app-tab-select">
+                            <div class="select" onclick="selectTab(0);">Sơ kết thi đua</div>
+                            <div class="no-select" onclick="selectTab(1);">Bảng sơ kết</div>
+                            <div class="no-select" onclick="selectTab(2);">Xem nội quy</div>
+                            <div class="no-select" onclick="selectTab(3);">Giới thiệu</div>
+                            <div class="no-select" onclick="selectTab(4);">Admin</div>
+                        </div>
+                    </div>
+
+<!-- Importain Importain Importain Importain Importain Importain Importain Importain Importain -->
+                    <div class="app-content">
+                        <div class="noi-dung-them-vao"></div>
+                    </div>
+<!-- Importain Importain Importain Importain Importain Importain Importain Importain Importain -->
+
+                </div>
+            </div>
+
+            <div class="dock-app-area" onmousemove="showDockApp();" onmouseleave="hiddenDockApp();">
+                    <div class="dock-app">
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/finder.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/safari.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/calendar.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/settings.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/calculator.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/visual.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/photoshop.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/illustrator.png" alt="">
+                        </div>
+        
+                        <div class="dock-app-seperate"></div>
+        
+                        <div class="dock-app-icon" onclick="openApp()">
+                            <img src="./assets/img/MACOS/App-bar/tvu.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/chrome.png" alt="">
+                        </div>
+                        <div class="dock-app-icon">
+                            <img src="./assets/img/MACOS/App-bar/recycle.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+      
+
+
+        
+
+
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

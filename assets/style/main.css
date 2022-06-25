@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+.MACOS {
+    width: 100%;
+    /* height: 1080px;  */   /* For Edge */
+    height: 864px; /*For Chrome*/
+    background-image: url(../img/MACOS/wallpaper/Wallpaper_1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+}
+
+/* TASKBAR */
+
+.taskbar {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.09);
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(165, 0, 0); */
+}
+
+.select-table {
+    display: flex;
+}
+
+.select-table .icon-macos {
+    padding: 0 10px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-table .icon-macos  .icon-macos-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.select-table ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-table li {
+    list-style: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1px 15px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-table li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.select-icon ul {
+    list-style: none;
+    display: flex;
+}
+
+.select-icon .taskbar-icon {
+    height: 25px;
+    margin: 0 8px 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-icon .taskbar-clock {
+    margin: 0 18px 0 10px;
+    color: #fff;    
+    line-height: 25px;
+    text-align: center;
+}
+
+.select-icon .taskbar-icon img {
+    width: 15px;
+    height: 15px;
+}
+
+.select-icon .taskbar-icon .desktop {
+    width: 20px;
+    height: 16px;
+}
+
+.select-icon .taskbar-icon .battery {
+    width: 24px;
+    height: 20px;
+}
+
+/* APP BAR */
+
+.dock-app-area {
+    width: 590px;
+    height: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: black; */
+}
+
+.dock-app {
+    height: 60px;
+    padding: 0 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dock-app .dock-app-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dock-app .dock-app-icon img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.4s;
+    transform-origin: 50% 100%;
+}
+
+.dock-app .dock-app-icon:hover img {
+    cursor: pointer;
+    margin: 0 30px 20px 30px;
+    transform: scale(2);
+}
+
+.dock-app-seperate {
+    width: 25px;
+    height: 60px;
+    position: relative;
+}
+
+.dock-app-seperate::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: rgb(78, 78, 78);
+}
